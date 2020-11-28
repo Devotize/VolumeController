@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:background="@android:color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <TextView-->
+<!--        android:id="@+id/notification_title"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        style="@style/TextAppearance.Compat.Notification.Title"-->
+<!--        android:text="@string/volumecontroller"-->
+<!--        android:textSize="24sp"-->
+<!--        android:textColor="@color/colorAccent"-->
+<!--        android:layout_gravity="center"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:layout_margin="4dp"
+            android:src="@drawable/ic_outline_volume_up_24"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ProgressBar
+                android:id="@+id/volume_media_progress_bar_small"
+                android:layout_width="match_parent"
+                style="@style/VolumeProgressBar"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="4dp"
+                android:layout_gravity="center"
+                />
+
+            <FrameLayout
+                android:id="@+id/volume_media_up_small"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                />
+
+            <FrameLayout
+                android:id="@+id/volume_media_down_small"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"/>
+
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

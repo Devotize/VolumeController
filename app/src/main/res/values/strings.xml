@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">VolumeController</string>
+    <string name="volumecontroller">VolumeController</string>
+    <string name="channel_name">volme_channel_notification</string>
+    <string name="channel_description">this is volme notification channel</string>
+    <string name="extend_volume_settings">Extend volume settings</string>
+</resources>

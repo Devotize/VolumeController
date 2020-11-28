@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            style="@style/VolumeTextView"
+            android:text="Media" />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/media_seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progressDrawable="@drawable/seek_bar_progress_drawable"
+            android:thumb="@drawable/thumb" />
+
+        <TextView
+            style="@style/VolumeTextView"
+            android:text="Ring" />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/ring_seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progressDrawable="@drawable/seek_bar_progress_drawable"
+            android:thumb="@drawable/thumb" />
+
+        <TextView
+            style="@style/VolumeTextView"
+            android:text="Alarm" />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/alarm_seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progressDrawable="@drawable/seek_bar_progress_drawable"
+            android:thumb="@drawable/thumb" />
+
+        <LinearLayout
+            android:id="@+id/extend_volume_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:animateLayoutChanges="true"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+            >
+
+            <TextView
+                style="@style/VolumeTextView"
+                android:text="Voice call" />
+
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/voice_seek_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progressDrawable="@drawable/seek_bar_progress_drawable"
+                android:thumb="@drawable/thumb" />
+
+            <TextView
+                style="@style/VolumeTextView"
+                android:text="Notification" />
+
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/notification_seek_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progressDrawable="@drawable/seek_bar_progress_drawable"
+                android:thumb="@drawable/thumb" />
+
+            <TextView
+                style="@style/VolumeTextView"
+                android:text="System sounds" />
+
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/system_seek_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progressDrawable="@drawable/seek_bar_progress_drawable"
+                android:thumb="@drawable/thumb" />
+
+            <TextView
+                style="@style/VolumeTextView"
+                android:text="DTMF" />
+
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/DTMF_seek_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progressDrawable="@drawable/seek_bar_progress_drawable"
+                android:thumb="@drawable/thumb" />
+
+            <TextView
+                style="@style/VolumeTextView"
+                android:text="Accessibility" />
+
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/accessibility_seek_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progressDrawable="@drawable/seek_bar_progress_drawable"
+                android:thumb="@drawable/thumb" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/other_settings_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/extend_volume_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="11dp"
+                android:text="@string/extend_volume_settings"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                app:switchPadding="13dp" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>
